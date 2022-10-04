@@ -7,4 +7,4 @@ on:[push]
       name: steps1 display hello
       uses: actions/checkout@v2
       run:
-        echo -e "hello"
+        echo  "hello"
