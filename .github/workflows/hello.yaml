@@ -1,11 +1,10 @@
-name:hello-world
-on:[push]
+name: hello-world
+on: [push]
 jobs:
   job1:
-    name:hello-display
-    runs-on :ubuntu-latest
+    name: hello-display
+    runs-on: ubuntu-latest
     steps:
-      name: steps1 display hello
-      uses: actions/checkout@v2
-      run:
-        echo  "hello"
+          - name: steps1 display hello
+          - uses: actions/checkout@v2
+          - run: echo  "hello"
