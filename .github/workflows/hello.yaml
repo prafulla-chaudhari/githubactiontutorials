@@ -21,6 +21,10 @@ jobs:
       name: download artifact
       runs-on: ubuntu-latest
       steps:
+        - name: Install peoject
+          run: npm install 
+        - name: build project assets
+          run: npm run build
         - name: Download a Build Artifact
           uses: actions/download-artifact@v3
           with:
