@@ -30,7 +30,7 @@ jobs:
         - name: upload project assets
           uses: actions/upload-artifact@v3
           with:
-              name: hello-world1
+              name: hello-world_1
               path: ./next
   job4:
     name: Release project
