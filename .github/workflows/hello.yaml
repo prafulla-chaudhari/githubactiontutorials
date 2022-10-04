@@ -19,7 +19,7 @@ jobs:
   job3:
       needs: job2
       name: download artifact
-      runs-on: windows-latest
+      runs-on: ubuntu-latest
       steps:
         - name: Download a Build Artifact
           uses: actions/download-artifact@v3
