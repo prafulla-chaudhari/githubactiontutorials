@@ -18,27 +18,12 @@ jobs:
       - run: echo "hi"
   job3:
       needs: job2
-      name: download artifact
+      name: Upload artifact
       runs-on: ubuntu-latest
       steps:
-        - name: Install project
-          run: npm install 
-        - name: build project assets
-          run: npm run build
-        - name: upload project assets
+        - name: Upload Artifact
           uses: actions/upload-artifact@v3
           with:
-              name: hello-world_1
+              name: hi-Artifact
               path: ./next
-  job4:
-    name: Release project
-    runs-on: ubuntu-latest
-    needs: job3
-    steps:
-         - name: Download a Build Artifact
-           uses: actions/download-artifact@v3
-           with:
-                # Artifact name
-                  name: hello-world1
-                # Destination path
-                  path: .
+  
