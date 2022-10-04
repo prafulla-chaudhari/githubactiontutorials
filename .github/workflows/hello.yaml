@@ -25,6 +25,11 @@ jobs:
           run: npm install 
         - name: build project assets
           run: npm run build
+        - name: upload project assets
+          uses: actions/upload-artifact@v3
+          with:
+              name: hello-world1
+              path: ./next
         - name: Download a Build Artifact
           uses: actions/download-artifact@v3
           with:
