@@ -22,8 +22,8 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: Upload Artifact
-          uses: actions/upload-artifact@v3
+          uses: actions/upload-artifact@v2
           with:
               name: hi-Artifact
-              path: /"Github tutorials"/githubactiontutorials/.github/workflows
+              path: .
   
