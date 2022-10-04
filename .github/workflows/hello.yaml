@@ -5,6 +5,6 @@ jobs:
     name: hello-display
     runs-on: ubuntu-latest
     steps:
-          - name: steps1 display hello
-          - uses: actions/checkout@v2
+          - name: display hello
+            uses: actions/checkout@v2
           - run: echo  "hello"
