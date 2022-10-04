@@ -21,7 +21,9 @@ jobs:
       name: download artifact
       runs-on: ubuntu-latest
       steps:
-        - name: Install peoject
+        - name: Init Project
+          run: npm init
+        - name: Install project
           run: npm install 
         - name: build project assets
           run: npm run build
