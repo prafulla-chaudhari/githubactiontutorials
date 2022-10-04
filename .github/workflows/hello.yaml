@@ -21,9 +21,9 @@ jobs:
       runs-on: windows-latest
       steps:
         - name: Download a Build Artifact
-          uses: actions/download-artifact@v3.0.0
+          uses: actions/download-artifact@v3
           with:
           # Artifact name
-            name: hello-world
+            name: hello-world1
           # Destination path
             path: .
