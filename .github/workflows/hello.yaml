@@ -26,4 +26,4 @@ jobs:
           # Artifact name
             name: myArtifactDownload
           # Destination path
-          path: .
+            path: .
