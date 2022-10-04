@@ -1,0 +1,10 @@
+name:hello-world
+on:[push]
+  jobs:
+    hello-display:
+      runs-on :ubuntu-latest
+    steps:
+      name: steps1 display hello
+      uses: actions/checkout@v2
+      run:
+        echo -e "hello"
