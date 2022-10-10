@@ -9,10 +9,8 @@ jobs:
           - run : mkdir downloads
           - name: display hello
             uses: actions/checkout@v2
-          - run: |
-              cd downloads
+          - run: 
               echo  "hello" > a.html
-              cd..
           - run: echo  "${{github.workspace}}"
   job2:
     needs: job1
