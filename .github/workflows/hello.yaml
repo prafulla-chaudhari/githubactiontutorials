@@ -20,7 +20,7 @@ jobs:
       - name: display hi
         uses : actions/checkout@v2
       - run: |
-            cd..
+            cd download
             echo "hi"
       
   job3:
