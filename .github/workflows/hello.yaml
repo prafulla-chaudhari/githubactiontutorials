@@ -11,6 +11,7 @@ jobs:
               mkdir download
               cd download
               echo  "hello" > a.html
+          - run:  ls
           - run: echo  "${{github.workspace}}"
   job2:
     needs: job1
