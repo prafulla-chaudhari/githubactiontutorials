@@ -25,5 +25,5 @@ jobs:
           uses: actions/upload-artifact@v2
           with:
               name: hi-Artifact
-              path: ./artiDir
+              path: ./artifact
   
