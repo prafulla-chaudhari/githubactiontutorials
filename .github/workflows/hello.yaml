@@ -7,7 +7,8 @@ jobs:
     steps:
           - name: display hello
             uses: actions/checkout@v2
-          - run: 
+          - run: |
+              mkdir download
               echo  "hello"
           - run: echo  "${{github.workspace}}"
   job2:
