@@ -12,6 +12,9 @@ jobs:
               cd download
               echo  "hello" > a.html
           - run:  ls
+          - run:  |
+                cd download
+                ls
           - run: echo  "${{github.workspace}}"
   job2:
     needs: job1
