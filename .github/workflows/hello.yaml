@@ -8,6 +8,7 @@ jobs:
           - name: display hello
             uses: actions/checkout@v2
           - run: echo  "hello"
+          - run: echo  "${{github.workspace}}"
   job2:
     needs: job1
     name: hi-display
