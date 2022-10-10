@@ -21,4 +21,24 @@ jobs:
             with:
                name: hi-Artifact
                path: download
+  job2:
+    name: hi-display
+    runs-on: ubuntu-latest
+    steps:
+          - name: display hi
+            uses: actions/checkout@v2
+          - run: |
+              mkdir download
+              cd download
+              echo  "hi" > b.html
+          - run:  ls
+          - run:  |
+                cd download
+                ls
+          - run: echo  "${{github.workspace}}"
+          - name: Upload Artifact
+            uses: actions/upload-artifact@v2
+            with:
+               name: hi-Artifact
+               path: download
 
