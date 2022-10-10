@@ -9,7 +9,7 @@ jobs:
             uses: actions/checkout@v2
           - run: |
               mkdir download
-              echo  "hello"
+              echo  "hello" > a.html
           - run: echo  "${{github.workspace}}"
   job2:
     needs: job1
