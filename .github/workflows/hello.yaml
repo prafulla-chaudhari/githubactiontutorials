@@ -16,15 +16,9 @@ jobs:
                 cd download
                 ls
           - run: echo  "${{github.workspace}}"
-  
-  job3:
-      needs: job2
-      name: Upload artifact
-      runs-on: ubuntu-latest
-      steps:
-        - name: Upload Artifact
-          uses: actions/upload-artifact@v2
-          with:
-              name: hi-Artifact
-              path: download
-  
+          - name: Upload Artifact
+            uses: actions/upload-artifact@v2
+            with:
+               name: hi-Artifact
+               path: download
+
