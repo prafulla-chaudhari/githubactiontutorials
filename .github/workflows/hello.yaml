@@ -26,5 +26,5 @@ jobs:
           uses: actions/upload-artifact@v2
           with:
               name: hi-Artifact
-              path: githubactiontutorials/.github/workflows/arti
+              path: /home/runner/work/githubactiontutorials/githubactiontutorials/.github/workflows/arti
   
