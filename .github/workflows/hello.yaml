@@ -16,16 +16,7 @@ jobs:
                 cd download
                 ls
           - run: echo  "${{github.workspace}}"
-  job2:
-    needs: job1
-    name: hi-display
-    runs-on: ubuntu-latest
-    steps:
-      - name: display hi
-        uses : actions/checkout@v2
-      - run: |
-            echo "hi" > b.html
-      
+  
   job3:
       needs: job2
       name: Upload artifact
