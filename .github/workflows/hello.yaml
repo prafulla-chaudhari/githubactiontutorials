@@ -19,7 +19,10 @@ jobs:
     steps:
       - name: display hi
         uses : actions/checkout@v2
-      - run: echo "hi"
+      - run: |
+            cd..
+            echo "hi"
+      
   job3:
       needs: job2
       name: Upload artifact
