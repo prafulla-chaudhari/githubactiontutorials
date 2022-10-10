@@ -5,8 +5,6 @@ jobs:
     name: hello-display
     runs-on: ubuntu-latest
     steps:
-          - name : Make download dir
-          - run : mkdir downloads
           - name: display hello
             uses: actions/checkout@v2
           - run: 
