@@ -10,7 +10,7 @@ jobs:
           - name: display hello
             uses: actions/checkout@v2
           - run: 
-              echo  "hello" > a.html
+              echo  "hello"
           - run: echo  "${{github.workspace}}"
   job2:
     needs: job1
