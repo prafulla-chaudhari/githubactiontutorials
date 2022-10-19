@@ -1,5 +1,5 @@
 #Build Status Badge: ![](https://github.com/prafulla-chaudhari/githubactiontutorials/edit/main/.github/workflows/badge.svg)
-\name: hello-world
+name: hello-world
 on: [push]
 jobs:
   job1:
