@@ -1,0 +1,44 @@
+#Build Status Badge: ![](https://github.com/prafulla-chaudhari/githubactiontutorials/edit/main/.github/workflows/badge.svg)
+\name: hello-world
+on: [push]
+jobs:
+  job1:
+    name: hello-display
+    runs-on: ubuntu-latest
+    steps:
+          - name: display hello
+            uses: actions/checkout@v2
+          - run: |
+              mkdir download
+              cd download
+              echo  "hello" > a.html
+          - run:  ls
+          - run:  |
+                cd download
+                ls
+          - run: echo  "${{github.workspace}}"
+          - name: Upload Artifact
+            uses: actions/upload-artifact@v2
+            with:
+               name: hi-Artifact
+               path: download
+  job2:
+    name: hi-display
+    runs-on: ubuntu-latest
+    steps:
+          - name: display hi
+            uses: actions/checkout@v2
+          - run: |
+              mkdir download
+              cd download
+              echo  "hi" > b.html
+          - run:  ls
+          - run:  |
+                cd download
+                ls
+          - run: echo  "${{github.workspace}}"
+          - name: Upload Artifact
+            uses: actions/upload-artifact@v2
+            with:
+               name: hi-Artifact
+               path: download
