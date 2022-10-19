@@ -3,7 +3,7 @@ name: hello-world
 on: [push]
 jobs:
   job1:
-    name: hello-display
+    name: Branding hello-display
     runs-on: ubuntu-latest
     steps:
           - name: display hello
@@ -23,7 +23,7 @@ jobs:
                name: hi-Artifact
                path: download
   job2:
-    name: hi-display
+    name: Branding hi-display
     runs-on: ubuntu-latest
     steps:
           - name: display hi
