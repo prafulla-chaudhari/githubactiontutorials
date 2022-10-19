@@ -1,5 +1,5 @@
 #Build Status Badge: ![](https://github.com/prafulla-chaudhari/githubactiontutorials/edit/main/.github/workflows/badge.svg)
-name: hello-world
+name: Branding hello-world
 on: [push]
 jobs:
   job1:
@@ -17,7 +17,7 @@ jobs:
                 cd download
                 ls
           - run: echo  "${{github.workspace}}"
-          - name: Upload Artifact
+          - name: Branding Upload Artifact
             uses: actions/upload-artifact@v2
             with:
                name: Branding hi-Artifact
@@ -37,7 +37,7 @@ jobs:
                 cd download
                 ls
           - run: echo  "${{github.workspace}}"
-          - name: Upload Artifact
+          - name: Branding Upload Artifact
             uses: actions/upload-artifact@v2
             with:
                name: Branding hi-Artifact
