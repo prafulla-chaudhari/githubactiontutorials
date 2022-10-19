@@ -6,7 +6,7 @@ jobs:
     name: Branding hello-display
     runs-on: ubuntu-latest
     steps:
-          - name: display hello
+          - name: Branding display hello
             uses: actions/checkout@v2
           - run: |
               mkdir download
@@ -20,13 +20,13 @@ jobs:
           - name: Upload Artifact
             uses: actions/upload-artifact@v2
             with:
-               name: hi-Artifact
+               name: Branding hi-Artifact
                path: download
   job2:
     name: Branding hi-display
     runs-on: ubuntu-latest
     steps:
-          - name: display hi
+          - name: Branding display hi
             uses: actions/checkout@v2
           - run: |
               mkdir download
@@ -40,5 +40,5 @@ jobs:
           - name: Upload Artifact
             uses: actions/upload-artifact@v2
             with:
-               name: hi-Artifact
+               name: Branding hi-Artifact
                path: download
