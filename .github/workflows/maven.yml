@@ -24,11 +24,11 @@ jobs:
         cache: maven
     - name: Build with Maven
       run:  |
-              mkdir download
-              cd HelloWorld
               ls
               echo "Step1"
               mvn -B package --file pom.xml
+              mkdir download
+              cd HelloWorld
     - name: Upload Hello World Maven Package
       uses: actions/upload-artifact@v2
       with:
