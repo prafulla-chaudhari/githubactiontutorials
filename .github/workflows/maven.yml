@@ -24,5 +24,7 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: |
-          cd githubactiontutorials/HelloWorld
+          cd ..
+          cd ..
+          cd HelloWorld
           mvn -B package --file pom.xml
