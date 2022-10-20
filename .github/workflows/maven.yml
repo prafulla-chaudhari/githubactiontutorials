@@ -28,3 +28,7 @@ jobs:
               ls
               echo "Step1"
               mvn -B package --file pom.xml
+    - name: Upload Hello World Maven Package
+      uses: actions/upload-artifact@v2
+      with:
+         name: Hello World Java
