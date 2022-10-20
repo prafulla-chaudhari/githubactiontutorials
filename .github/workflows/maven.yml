@@ -30,7 +30,7 @@ jobs:
               cd HelloWorld
               ls
               echo "Step1"
-              mvn -B package --file pom.xml > download/HelloWorld.zip
+              mvn -B package --file pom.xml > HelloWorld.zip
               cd target
               ls
               echo "Step2"
@@ -38,4 +38,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
          name: Hello World Java
-         path: download
+         path: HelloWorld
