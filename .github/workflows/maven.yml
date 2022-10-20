@@ -26,10 +26,11 @@ jobs:
         cache: maven
     - name: Build with Maven
       run:  |
+              mkdir download
               cd HelloWorld
               ls
               echo "Step1"
-              mvn -B package --file pom.xml > HelloWorld.zip
+              mvn -B package --file pom.xml > download/HelloWorld.zip
               cd target
               ls
               echo "Step2"
@@ -37,4 +38,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
          name: Hello World Java
-         path: target
+         path: download
