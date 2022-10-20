@@ -25,6 +25,8 @@ jobs:
     - name: Build with Maven
       run: |
           cd ..
+          ls
           cd ..
+          ls
           cd HelloWorld
           mvn -B package --file pom.xml
