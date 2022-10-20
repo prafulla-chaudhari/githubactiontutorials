@@ -23,14 +23,4 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: |
-          ls
-          echo "Step1"
-          cd ..
-          ls
-          echo "Step2"
-          cd ..
-          ls
-          echo "Step3"
-          cd HelloWorld
-          mvn -B package --file pom.xml
+      run:  mvn -B package --file pom.xml
